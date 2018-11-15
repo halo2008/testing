@@ -179,9 +179,8 @@
               <li><a href="#">Dining</a></li>
             </ul>
           </div>
-          <div class="col-auto dots">
-            <ul class="dots-item">
-                       
+          <div class="col-auto dots" id="dots">       <!-- tuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu -->
+            <ul class="dots3" id="dots2">
             </ul>
           </div>
         </div>
@@ -454,7 +453,7 @@
               </div>
             </div>
           </div>
-</div>
+			</div>
       </div>
     </div>
   </div>
@@ -626,7 +625,10 @@
     import {tns} from './scripts/tiny-slider.js';
 
     var sliderFurniture = tns({        
-        container: '.sliderFurniture',        
+        container: '.sliderFurniture',
+        nav: true,
+	  	navAsThumbnails: true,
+	  	navContainer: '.dots3',        
         items: 1,
         slideBy: 'page',
         controls: false,
@@ -645,8 +647,7 @@
             items: 4
           }
         }              
-    });
-    
+    });    
 
   </script>
   <script src="./scripts/app.js"></script>
